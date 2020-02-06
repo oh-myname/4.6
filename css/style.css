@@ -1,49 +1,85 @@
+/*variables*/
 /*global*/
 body {
   text-align: center;
   font-family: "Oswald", sans-serif;
+  margin: 0;
 }
 
-/*navigation*/
-nav .navmain {
-  height: 40px;
-  width: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-}
-
-nav .navleft {
-  font-family: "Zhi Mang Xing", cursive;
-  font-size: 30px;
-  width: 40%;
-  margin-left: 5%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
-}
-
-nav .navright {
-  width: 40%;
-  margin-right: 5%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-  text-transform: uppercase;
-}
-
-nav .navright a {
-  text-decoration: none;
-  padding-left: 15px;
-  color: #000;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 /*splash*/
+.splash {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://images.pexels.com/photos/3635300/pexels-photo-3635300.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+
+.splash-inner {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.splash-inner h3 {
+  font-size: 50px;
+  color: #fff;
+  font-family: "Teko", sans-serif;
+}
+
+.splash-inner h1 {
+  font-size: 80px;
+  color: #fff;
+  font-family: "Teko", sans-serif;
+}
+
+.splash-inner button {
+  background-color: #f39c12;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  border: none;
+  height: 50px;
+  width: 140px;
+}
+
+.splash-inner button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  height: 100px;
+}
+
+nav h3 {
+  font-family: "Zhi Mang Xing", cursive;
+  font-size: 30px;
+  color: #f39c12;
+  padding-left: 5%;
+  font-style: italic;
+}
+
+nav ul {
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  padding-right: 8%;
+}
+
+nav ul li {
+  color: #fff;
+  list-style-type: none;
+  padding: 20px;
+}
 /*# sourceMappingURL=style.css.map */
