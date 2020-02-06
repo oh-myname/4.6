@@ -1,9 +1,49 @@
 /*global*/
-.navigation p {
-  font-family: "Zhi Mang Xing", cursive;
-}
-
 body {
   text-align: center;
+  font-family: "Oswald", sans-serif;
 }
+
+/*navigation*/
+nav .navmain {
+  height: 40px;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+nav .navleft {
+  font-family: "Zhi Mang Xing", cursive;
+  font-size: 30px;
+  width: 40%;
+  margin-left: 5%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+
+nav .navright {
+  width: 40%;
+  margin-right: 5%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  text-transform: uppercase;
+}
+
+nav .navright a {
+  text-decoration: none;
+  padding-left: 15px;
+  color: #000;
+}
+
+/*splash*/
 /*# sourceMappingURL=style.css.map */
