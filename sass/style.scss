@@ -79,13 +79,33 @@ nav h3 {
 }
 
 nav ul {
-  display: flex;
-  text-transform: uppercase;
-  padding-right: 8%;
+    display: flex;
+    text-transform: uppercase;
+    padding-right: 8%;
 }
 
 nav ul li {
-  color: $color-3;
-  list-style-type: none;
-  padding: 20px;
+    color: $color-3;
+    list-style-type: none;
+    padding: 20px;
+}
+
+/*services*/
+
+.services .container {
+    min-height: 500px;
+
+}
+
+.services .container .row {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+}
+
+.services i {
+    font-size: 40px;
+    color: $color-1;
 }

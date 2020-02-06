@@ -82,4 +82,25 @@ nav ul li {
   list-style-type: none;
   padding: 20px;
 }
+
+/*services*/
+.services .container {
+  min-height: 500px;
+}
+
+.services .container .row {
+  margin: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 500px;
+}
+
+.services i {
+  font-size: 40px;
+  color: #f39c12;
+}
 /*# sourceMappingURL=style.css.map */
