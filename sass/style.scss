@@ -7,6 +7,8 @@ $font-text: 'Oswald', sans-serif;
 $color-1: #f39c12;
 $color-2: #000;
 $color-3: #fff;
+$color-4: #f7f1e3;
+$color-5: #222f3e;
 
 /*global*/
 
@@ -17,6 +19,10 @@ body {
 }
 *, *::before, *::after {
     box-sizing: border-box;
+}
+
+h2, h4 {
+  text-transform:uppercase;
 }
 
 /*splash*/
@@ -93,7 +99,7 @@ nav ul li {
 /*services*/
 
 .services .container {
-    min-height: 500px;
+    min-height: 600px;
 
 }
 
@@ -108,4 +114,50 @@ nav ul li {
 .services i {
     font-size: 40px;
     color: $color-1;
+}
+
+/*portfolio*/
+.portfolio {
+  width: 100%;
+}
+.portfolio .container {
+    min-height: 600px;
+    background-color: $color-4;
+    width: 100vw;
+}
+
+.portfolio .gallery .item {
+    background-color: $color-3;
+    width: 300px;
+    height: 500px;
+    margin: 10px 20px;
+}
+
+.portfolio .gallery .item img {
+    width:  300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/*footer*/
+
+footer {
+    background-color: $color-5;
+    min-height: 200px;
+}
+
+footer span p{
+  width: 200px;
+}
+
+footer p {
+    color: $color-3;
+}
+
+footer i {
+  font-size: 25px;
+  color: $color-1;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 300;
 }
